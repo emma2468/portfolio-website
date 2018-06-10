@@ -1,0 +1,597 @@
+/*Generelt for alle sider*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.menu {
+    text-align: right;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    padding: 8px 20px;
+    display: block;
+    cursor: pointer;
+    background-color: white;
+    transform: rotateY(180deg);
+    border-radius: 0px 0px 30px 0px;
+    z-index: 10;
+}
+
+nav {
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    background-color: white;
+}
+
+nav.hidden {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 2em;
+}
+
+nav a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+nav a:hover {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 25px;
+}
+
+nav li {
+    padding-bottom: 4em;
+}
+
+.sitename {
+    color: black;
+    font-size: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    z-index: 3;
+}
+
+.logo {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo_port img{
+    max-width: 20%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+   .logo_port img{
+        max-width: 35%;
+    }
+}
+
+.cv {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.cv a {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.cv a:hover {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: darkgrey;
+    font-size: 25px;
+}
+
+.portfolio {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.portfolio a {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.portfolio a:hover {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: darkgrey;
+    font-size: 25px;
+}
+
+.home {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.home a {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.home a:hover {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: darkgrey;
+    font-size: 25px;
+}
+
+.headline {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.line {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    color: grey;
+}
+
+/*Burgermenu*/
+
+.bar {
+    width: 30px;
+    height: 1px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.cross .bar1 {
+    transform: rotate(45deg) translate(3px, 7px);
+
+}
+
+.cross .bar2 {
+    visibility: hidden;
+}
+
+.cross .bar3 {
+    transform: rotate(-45deg) translate(3px, -7px);
+}
+
+/*Portfolio*/
+
+#portfolio_section .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#portfolio_section .responsive_site_v3 {
+    flex-basis: 450px;
+    flex-grow: 1;
+    padding: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    #portfolio_section .responsive_site_v3 {
+        padding: 0.5em;
+    }
+}
+
+#portfolio_section .everyday {
+    flex-basis: 450px;
+    flex-grow: 1;
+    padding: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    #portfolio_section .everyday {
+        padding: 0.5em;
+    }
+}
+
+#portfolio_section .redesign_website {
+    flex-basis: 450px;
+    flex-grow: 1;
+    padding: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    #portfolio_section .redesign_website {
+        padding: 0.5em;
+    }
+}
+
+#portfolio_section .animations_opgave {
+    flex-basis: 450px;
+    flex-grow: 1;
+    padding: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    #portfolio_section .animations_opgave {
+        padding: 0.5em;
+    }
+}
+
+#portfolio_section .sex_samfund {
+    flex-basis: 450px;
+    flex-grow: 1;
+    padding: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    #portfolio_section .sex_samfund {
+        padding: 0.5em;
+    }
+}
+
+#portfolio_section .kea_app {
+    flex-basis: 450px;
+    flex-grow: 1;
+    padding: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    #portfolio_section .kea_app {
+        padding: 0.5em;
+    }
+}
+
+#portfolio_section .joe_app {
+    flex-basis: 450px;
+    flex-grow: 1;
+    padding: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    #portfolio_section .joe_app {
+        padding: 0.5em;
+    }
+}
+
+#portfolio_section .portfolio_portfolio {
+    flex-basis: 450px;
+    flex-grow: 1;
+    padding: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    #portfolio_section .portfolio_portfolio {
+        padding: 0.5em;
+    }
+}
+
+.portfolio img {
+    width: 60%;
+    opacity: 0.5;
+}
+
+.portfolio img:hover {
+    width: 60%;
+    opacity: 1;
+}
+
+/*CV*/
+
+#cv_about .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+#cv_about .cv_me {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 2em;
+    padding: 2em;
+}
+
+#cv_about .cv_work {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 2em;
+    padding: 2em;
+}
+
+
+.cv_me img {
+    width: 50%;
+}
+
+.cv_me p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+
+
+.cv_work img {
+    width: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+    .cv_work img {
+        width: 30%;
+    }
+}
+
+.cv_work p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+
+/*Reskonsive site*/
+
+.responsivesite_about {
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    .responsivesite_about {
+        max-width: 70%;
+    }
+}
+
+.responsivesite_about img {
+    width: 100%;
+}
+
+.responsivesite_about a {
+    color: black;
+}
+
+.responsivesite_about p {
+    font-size: 18px;
+}
+
+/*Everyday*/
+
+.everyday_site {
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    .everyday_site {
+        max-width: 70%;
+    }
+}
+
+.everyday_site iframe {
+    width: 100%;
+}
+
+.everyday_site a {
+    color: black;
+}
+
+.everyday_site p {
+    font-size: 18px;
+}
+
+/*Redesign Dialegd*/
+
+.redesign_dialegd {
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    .redesign_dialegd {
+        max-width: 70%;
+    }
+}
+
+.redesign_dialegd iframe {
+    width: 100%;
+}
+
+.redesign_dialegd a {
+    color: black;
+}
+
+.redesign_dialegd img {
+    width: 100%;
+}
+
+.redesign_dialegd p {
+    font-size: 18px;
+}
+
+/*My animation*/
+
+.my_animation {
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    .my_animation {
+        max-width: 70%;
+    }
+}
+
+.my_animation img {
+    width: 100%;
+}
+
+.my_animation a {
+    color: black;
+}
+
+.my_animation p {
+    font-size: 18px;
+}
+
+/*Animation sex & samfund*/
+
+.animation_sexsamfund {
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    .animation_sexsamfund {
+        max-width: 70%;
+    }
+}
+
+.animation_sexsamfund a {
+    color: black;
+}
+
+.animation_sexsamfund img {
+    width: 100%;
+}
+
+.animation_sexsamfund p {
+    font-size: 18px;
+}
+
+/*KEA app design*/
+
+#keaapp {
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    #keaapp {
+        max-width: 70%;
+    }
+}
+
+#keaapp video {
+    width: 100%;
+}
+
+#keaapp a {
+    color: black;
+}
+
+#keaapp p {
+    font-size: 18px;
+}
+
+/*Business case - joe and the juice*/
+
+.joeandthejuice {
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    .joeandthejuice {
+        max-width: 70%;
+    }
+}
+
+.joeandthejuice iframe {
+    width: 100%;
+}
+
+.joeandthejuice a {
+    color: black;
+}
+
+.joeandthejuice p {
+    font-size: 18px;
+}
+
+/*Button (til top pil)*/
+
+#button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    #button {
+        bottom: 20px;
+        right: 10px;
+    }
+}
+
+#button:hover {
+    color: darkgrey;
+    font-size: 20px;
+}
+
+/*Footer*/
+
+.footer {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 13px;
+}
+
+.footer img {
+    width: 30px;
+}
